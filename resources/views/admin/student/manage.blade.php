@@ -48,10 +48,6 @@
                                 </td>
                             </tr>
                         @endforeach
-                    @else
-                        <tr>
-                            <td colspan="5">No records found</td>
-                        </tr>
                     @endif
 
                 </tbody>

@@ -22,7 +22,7 @@
         <div class="card mb-4 p-4">
             <table id="teacherTable" class="table " style="width:100%;background-color:white;">
                 <thead>
-                    <tr >
+                    <tr>
                         <th>Sr No.</th>
                         <th>Name</th>
                         <th>Email</th>
@@ -41,15 +41,13 @@
                                 <td>{{ $teacher->education ?? 'N/A' }}</td>
                                 <td>{{ date('d-m-Y', strtotime($teacher->dob)) ?? 'N/A' }}</td>
                                 <td>
-                                    <a href="{{ route('deleteteacher', $teacher->id) }}" class="btn btn-sm btn-outline-danger">Del</a>
-                                    <a href="{{ route('editteacher', $teacher->id) }}" class="btn btn-sm btn-outline-warning">Edit</a>
+                                    <a href="{{ route('deleteteacher', $teacher->id) }}"
+                                        class="btn btn-sm btn-outline-danger">Del</a>
+                                    <a href="{{ route('editteacher', $teacher->id) }}"
+                                        class="btn btn-sm btn-outline-warning">Edit</a>
                                 </td>
                             </tr>
                         @endforeach
-                    @else
-                        <tr>
-                            <td colspan="5">No records found</td>
-                        </tr>
                     @endif
 
                 </tbody>
