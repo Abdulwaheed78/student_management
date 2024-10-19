@@ -15,6 +15,7 @@ Use JS DataTables for an enhanced student list view.
 Set up Laravel's authentication system with php artisan make:auth
 
 **how to setup and run project **
+first open terminal in project directory and run **composer install** command
 step1: after clone gotot .env file and change db name according to you and create a db with same name  
 step2: run php artisan migrate command
 step3: goto db users table and add admin entry with hashed password 
